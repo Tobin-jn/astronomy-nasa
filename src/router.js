@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path: "/DailyPic",
-      name: "dailyPic",
+      name: "DailyPic",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -24,7 +24,7 @@ export default new Router({
     },
     {
       path: "/MonthlyPics",
-      name: "monthlyPics",
+      name: "MonthlyPics",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
