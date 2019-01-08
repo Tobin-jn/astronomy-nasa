@@ -2,6 +2,13 @@
   <div class="home">
     <HelloWorld msg="Daily Astronomer"/>
 
+    <button class="daily-btn btn">
+      <router-link to="/DailyPic">Picture of the Day</router-link>
+    </button>
+    <button class="monthly-btn btn">
+      <router-link to="/MonthlyPics">Pictures of the Month</router-link>
+    </button>
+
   </div>
 </template>
 
