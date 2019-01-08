@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/jupiter.jpg">
     <HelloWorld msg="Daily Astronomer"/>
+
   </div>
 </template>
 
@@ -16,3 +16,19 @@ export default {
   }
 };
 </script>
+
+<style>
+.home {
+  margin: 0;
+  height: 100vh;
+  background-image: url("../assets/jupiter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+
+
+
+
