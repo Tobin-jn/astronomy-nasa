@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Vue logo" src="../assets/jupiter.jpg">
     <HelloWorld msg="Daily Astronomer"/>
   </div>
 </template>
