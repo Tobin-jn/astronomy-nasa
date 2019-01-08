@@ -1,7 +1,14 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Daily Astronomer"/>
+
+    <button class="daily-btn btn">
+      <router-link to="/DailyPic">Picture of the Day</router-link>
+    </button>
+    <button class="monthly-btn btn">
+      <router-link to="/MonthlyPics">Pictures of the Month</router-link>
+    </button>
+
   </div>
 </template>
 
@@ -16,3 +23,19 @@ export default {
   }
 };
 </script>
+
+<style>
+.home {
+  margin: 0;
+  height: 100vh;
+  background-image: url("../assets/jupiter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+
+
+
+
