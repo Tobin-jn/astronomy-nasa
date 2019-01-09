@@ -5,3 +5,11 @@
     <router-link to="/DailyPic">Picture of the Day</router-link>
   </div>
 </template>
+
+<script>
+
+</script>
+
+<style>
+
+</style>
