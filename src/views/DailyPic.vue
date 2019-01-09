@@ -17,46 +17,58 @@
 
 // width="800"
 <script>
-  import nasaData from '../assets/data'
-  import apiKey from "../apiKey";
+import nasaData from "../assets/data";
+import apiKey from "../apiKey";
 
-  export default {
-    data() {
-      return {
-        pic: nasaData[1]
-      }
+export default {
+  data() {
+    return {
+      pic: nasaData[1]
+    };
+  },
+  methods: {
+    getDay: function() {
+      const today = new Date();
+      const year = today.getFullYear();
+      const day = today.getDate();
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ];
+      const month = months[today.getMonth()];
+
+      return `${month} ${day}, ${year}`;
     },
-    methods: {
-      getDay: function(){
-        const today = new Date()
-        const year = today.getFullYear()
-        const day = today.getDate()
-        const months = ["January","February","March","April","May","June","July",
-            "August","September","October","November","December"];
-        const month = months[today.getMonth()]
+    getDate: function() {
+      const today = new Date();
+      const year = String(today.getFullYear());
+      let day = String(today.getDate());
+      let month = String(today.getMonth() + 1);
 
-        return `${month} ${day}, ${year}`
-      },
-      getDate: function(){
-        const today = new Date()
-        const year = String(today.getFullYear())
-        let day = String(today.getDate())
-        let month = String(today.getMonth()+1)
+      if (month.length < 2) month = "0" + month;
+      if (day.length < 2) day = "0" + day;
 
-        if (month.length < 2) month = '0' + month;
-        if (day.length < 2) day = '0' + day;
-
-        return `${year}-${month}-${day}`
-      },
-    },
-    // created() {
-    //   const date = this.getDate()
-    //   const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`
-    //   this.$http.get(url).then(function(data){
-    //     this.pic = data
-    //   })
-    // }
+      return `${year}-${month}-${day}`;
+    }
   }
+  // created() {
+  //   const date = this.getDate()
+  //   const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`
+  //   this.$http.get(url).then(function(data){
+  //     this.pic = data
+  //   })
+  // }
+};
 </script>
 
 <style>
@@ -84,7 +96,6 @@
   width: 80%;
   box-shadow: 0 0 6px 0 #fff;
   border: 3px solid #fff;
-
 }
 
 .explanation {
@@ -92,5 +103,4 @@
   padding: 20px 70px 20px 70px;
   text-align: center;
 }
-
 </style>
