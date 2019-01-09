@@ -32,9 +32,9 @@ View the NASA Astronomy Picture of the Day. Users can also view the entire month
 <img src='images/month-app.png' alt='Main View' width='700' >
 
 #### Wireframes:
-<img src='images/Home.png' alt='Main View' width='300' >
-<img src='images/Day.png' alt='Main View' width='300' >
-<img src='images/Month.png' alt='Main View' width='300' >
+<img src='images/Home.png' alt='Main View' width='400' >
+<img src='images/Day.png' alt='Main View' width='400' >
+<img src='images/Month.png' alt='Main View' width='400' >
 
 ### Setup
 #### Frontend
