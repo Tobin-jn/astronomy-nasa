@@ -18,14 +18,14 @@ export default new Router({
       name: "DailyPic",
 
       component: () =>
-        import("./views/DailyPic.vue")
+        import(/* webpackChunkName: "about" */ "./views/DailyPic.vue")
     },
     {
       path: "/MonthlyPics",
       name: "MonthlyPics",
 
       component: () =>
-        import("./views/MonthlyPics.vue")
+        import(/* webpackChunkName: "about" */ "./views/MonthlyPics.vue")
     }
   ]
 });
