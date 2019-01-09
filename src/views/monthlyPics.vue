@@ -48,8 +48,7 @@
       const endDate = this.getDate()
       const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDate}&end_date=${endDate}`
       this.$http.get('url....where...we..get..pic').then(function(data) {
-        const dayPics = [...this.days, data]
-        this.days = dayPics
+        this.days = data
       })
     }
   }
