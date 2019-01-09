@@ -5,7 +5,7 @@
     <router-link to="/DailyPic">Picture of the Day</router-link>
 
     <div v-for="day in days" class='day-card'>
-      <h4> {{day.date}} </h4>
+      <h4> {{getDay(day.date)}} </h4>
       <img v-bind:src="day.url" class="day-image" alt="Picture of the Day" width="200" />
     </div>
   </div>
@@ -23,26 +23,36 @@
 
     },
     methods: {
-      getDate: function(){
-        const today = new Date()
-        const year = String(today.getFullYear())
-        let day = String(today.getDate())
-        let month = String(today.getMonth()+1)
+      getDay: function(today){
+        const year = today.slice(0, 4)
+        const day = today.slice(8, 10)
+        const months = ["January","February","March","April","May","June","July",
+            "August","September","October","November","December"];
+        const month = months[today.slice(5, 7)-1]
 
-        if (month.length < 2) month = '0' + month;
-        if (day.length < 2) day = '0' + day;
-
-        return `${year}-${month}-${day}`
+        return `${month} ${day}, ${year}`
+    
       },
-      getFirstDay: function(){
-        const today = new Date()
-        const year = String(today.getFullYear())
-        let month = String(today.getMonth()+1)
+      // getDate: function(){
+      //   const today = new Date()
+      //   const year = String(today.getFullYear())
+      //   let day = String(today.getDate())
+      //   let month = String(today.getMonth()+1)
 
-        if (month.length < 2) month = '0' + month;
+      //   if (month.length < 2) month = '0' + month;
+      //   if (day.length < 2) day = '0' + day;
 
-        return `${year}-${month}-01`
-      }
+      //   return `${year}-${month}-${day}`
+      // },
+      // getFirstDay: function(){
+      //   const today = new Date()
+      //   const year = String(today.getFullYear())
+      //   let month = String(today.getMonth()+1)
+
+      //   if (month.length < 2) month = '0' + month;
+
+      //   return `${year}-${month}-01`
+      // }
     },
     // created() {
     //   const startDate = this.getFirstDay()
@@ -53,13 +63,8 @@
     //   })
     // }
   }
-
 </script>
 
 <style>
 
 </style>
-
-// https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2017-07-08&end_date=2017-07-10
-
-// https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2017-07-08
