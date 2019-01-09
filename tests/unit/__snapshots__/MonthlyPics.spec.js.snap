@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonthlyPics renders correctly 1`] = `
+<div
+  class="monthlyPics"
+>
+  <h1>
+     Astronomy Pictures
+  </h1>
+   
+  <router-link
+    to="/"
+  >
+    <img
+      alt="Home Icon"
+      class="home-btn"
+      src="../assets/home-icon.png"
+    />
+  </router-link>
+   
+  <div
+    class="card-container"
+  >
+    <div
+      class="day-card"
+    >
+      <h4>
+         January 01, 2019 
+      </h4>
+       
+      <img
+        alt="Picture of the Day"
+        class="day-image"
+        src="https://apod.nasa.gov/apod/image/1812/WitchHeadNebula_Mishra_2725.jpg"
+        width="200"
+      />
+    </div>
+    <div
+      class="day-card"
+    >
+      <h4>
+         January 02, 2019 
+      </h4>
+       
+      <img
+        alt="Picture of the Day"
+        class="day-image"
+        src="https://apod.nasa.gov/apod/image/1901/sombrero_spitzer_3000.jpg"
+        width="200"
+      />
+    </div>
+    <div
+      class="day-card"
+    >
+      <h4>
+         January 03, 2019 
+      </h4>
+       
+      <img
+        alt="Picture of the Day"
+        class="day-image"
+        src="https://apod.nasa.gov/apod/image/1901/orionred_WISEantonucci_1824.jpg"
+        width="200"
+      />
+    </div>
+    <div
+      class="day-card"
+    >
+      <h4>
+         January 04, 2019 
+      </h4>
+       
+      <img
+        alt="Picture of the Day"
+        class="day-image"
+        src="https://apod.nasa.gov/apod/image/1901/20190102UltimaThule-pr.png"
+        width="200"
+      />
+    </div>
+    <div
+      class="day-card"
+    >
+      <h4>
+         January 05, 2019 
+      </h4>
+       
+      <img
+        alt="Picture of the Day"
+        class="day-image"
+        src="https://apod.nasa.gov/apod/image/1901/UT-blink_3d_a.gif"
+        width="200"
+      />
+    </div>
+    <div
+      class="day-card"
+    >
+      <h4>
+         January 06, 2019 
+      </h4>
+       
+      <img
+        alt="Picture of the Day"
+        class="day-image"
+        src="https://apod.nasa.gov/apod/image/1901/Jan3yutu2CNSA.jpg"
+        width="200"
+      />
+    </div>
+    <div
+      class="day-card"
+    >
+      <h4>
+         January 07, 2019 
+      </h4>
+       
+      <img
+        alt="Picture of the Day"
+        class="day-image"
+        src="https://apod.nasa.gov/apod/image/1901/vltlaser_beletsky_1400.jpg"
+        width="200"
+      />
+    </div>
+    <div
+      class="day-card"
+    >
+      <h4>
+         January 08, 2019 
+      </h4>
+       
+      <img
+        alt="Picture of the Day"
+        class="day-image"
+        src="https://apod.nasa.gov/apod/image/1901/Geminids46P_jcc_2000.jpg"
+        width="200"
+      />
+    </div>
+    <div
+      class="day-card"
+    >
+      <h4>
+         January 09, 2019 
+      </h4>
+       
+      <img
+        alt="Picture of the Day"
+        class="day-image"
+        src="https://apod.nasa.gov/apod/image/1812/CarinaNebulaGerminiani.jpg"
+        width="200"
+      />
+    </div>
+  </div>
+   
+  <button
+    class="daily-pic-btn"
+  >
+    <router-link
+      to="/DailyPic"
+    >
+      Picture of the Day
+    </router-link>
+  </button>
+</div>
+`;

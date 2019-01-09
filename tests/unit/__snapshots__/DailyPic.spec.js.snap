@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DailyPic renders correctly 1`] = `
+<div
+  class="dailypic"
+>
+  <h1>
+    Astronomy Picture of the Day
+  </h1>
+   
+  <router-link
+    to="/"
+  >
+    <img
+      alt="Home Icon"
+      class="home-btn"
+      src="../assets/home-icon.png"
+    />
+  </router-link>
+   
+  <div
+    class="pic-container"
+  >
+    <h3
+      class="date"
+    >
+      January 9, 2019
+    </h3>
+     
+    <img
+      alt="Daily Astronomy Picture"
+      class="image"
+      src="https://apod.nasa.gov/apod/image/1901/sombrero_spitzer_3000.jpg"
+    />
+     
+    <p
+      class="explanation"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+   
+  <button
+    class="monthly-pic-btn"
+  >
+    <router-link
+      to="/MonthlyPics"
+    >
+      Pictures of the Month
+    </router-link>
+  </button>
+</div>
+`;

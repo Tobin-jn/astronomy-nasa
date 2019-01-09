@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<div
+  class="home"
+>
+  <h1
+    class="heading"
+  >
+    Daily Astronomer
+  </h1>
+   
+  <div
+    class="button-container"
+  >
+    <button>
+      <router-link
+        to="/DailyPic"
+      >
+        Picture of the Day
+      </router-link>
+    </button>
+     
+    <button>
+      <router-link
+        to="/MonthlyPics"
+      >
+        Pictures of the Month
+      </router-link>
+    </button>
+  </div>
+</div>
+`;
