@@ -6,7 +6,8 @@ const nasaData = [
     media_type: "image",
     service_version: "v1",
     title: "SpaceX Rocket Launch Plume over California",
-    url: "../assets/SpaceXLaunch_960.jpg"
+    url: "/img/SpaceXLaunch_960.31c19fb5.jpg"
+
 },
 {
     copyright: "NASA",
@@ -109,3 +110,4 @@ const nasaData = [
 }
 ]
 
+export default nasaData;
