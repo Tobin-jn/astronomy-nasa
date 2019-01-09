@@ -97,30 +97,30 @@ const nasaData = [
     service_version: "v1",
     title: "Space Beauty and Wonder",
     url: "https://apod.nasa.gov/apod/image/1812/CarinaNebulaGerminiani.jpg"
-  },
-  {
-    id: 10,
-    copyright: "NASA",
-    date: "2019-01-10",
-    explanation:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    media_type: "image",
-    service_version: "v1",
-    title: "Space Beauty and Wonder",
-    url:
-      "https://apod.nasa.gov/apod/image/1812/NewHorizonsApproachesMU69_1024.jpg"
-  },
-  {
-    id: 11,
-    copyright: "NASA",
-    date: "2019-01-11",
-    explanation:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    media_type: "image",
-    service_version: "v1",
-    title: "Space Beauty and Wonder",
-    url: "https://apod.nasa.gov/apod/image/1812/NGC1365_HaLRGBpugh.jpg"
   }
+  // {
+  //   id: 10,
+  //   copyright: "NASA",
+  //   date: "2019-01-10",
+  //   explanation:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  //   media_type: "image",
+  //   service_version: "v1",
+  //   title: "Space Beauty and Wonder",
+  //   url:
+  //     "https://apod.nasa.gov/apod/image/1812/NewHorizonsApproachesMU69_1024.jpg"
+  // },
+  // {
+  //   id: 11,
+  //   copyright: "NASA",
+  //   date: "2019-01-11",
+  //   explanation:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  //   media_type: "image",
+  //   service_version: "v1",
+  //   title: "Space Beauty and Wonder",
+  //   url: "https://apod.nasa.gov/apod/image/1812/NGC1365_HaLRGBpugh.jpg"
+  // }
 ];
 
 export default nasaData;
