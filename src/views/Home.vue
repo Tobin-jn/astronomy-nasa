@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style scoped>
+body {
+  margin: 0;
+}
+
 .home {
   margin: 0;
   height: 100vh;
