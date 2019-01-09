@@ -21,16 +21,20 @@ View the NASA Astronomy Picture of the Day. Users can also view the entire month
 
 #### Landing Page:
 
-<img src='src/images/landing.png' alt='Main View' width='700' >
+<img src='images/landing-app.png' alt='Main View' width='700' >
 
-![alt text](image.jpg)
+#### Picture of the Day:
 
-#### Whatever Page:
+<img src='images/day-app.png' alt='Main View' width='700' >
 
-![alt text](image.jpg)
+#### Pictures of the Month:
 
-#### Additional Assets:
+<img src='images/month-app.png' alt='Main View' width='700' >
 
+#### Wireframes:
+<img src='images/Home.png' alt='Main View' width='300' >
+<img src='images/Day.png' alt='Main View' width='300' >
+<img src='images/Month.png' alt='Main View' width='300' >
 
 ### Setup
 #### Frontend
@@ -39,7 +43,7 @@ Clone the repo
 
 Run ```npm install``` from the root directory
 
-Run ```npm run serve``` and visit localhost:3000 in your browser
+Run ```npm run serve``` and visit localhost:8080 in your browser
 
 
 ### Test Driven Development
