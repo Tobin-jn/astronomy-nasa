@@ -14,18 +14,17 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "home",
-  components: {
-    HelloWorld
-  }
 };
 </script>
 
 <style scoped>
+body {
+  margin: 0;
+}
+
 .home {
   margin: 0;
   height: 100vh;

@@ -1,19 +1,23 @@
 <template>
   <div class="dailypic">
     <h1>Astronomy Picture of the Day</h1>
-    <router-link to="/">Home</router-link>
-    <router-link to="/MonthlyPics">Pictures of the Month</router-link>
-
+    <router-link to="/"><img class="home-btn" src="../assets/home-icon.png" alt="Home Icon" /></router-link>
     <div class="pic-container">
-      <h3 class="date">{{ getDate() }}</h3>
+      <h3 class="date">{{ getDay() }}</h3>
       <img class="image" v-bind:src="pic.url" alt="Daily Astronomy Picture"/>
       <p class="explanation">{{ pic.explanation }}</p>
     </div>
+    
+    <button>
+      <router-link to="/MonthlyPics">Pictures of the Month</router-link>
+    </button>
+
   </div>
 </template>
 
 <script>
   import nasaData from '../assets/data'
+  import apiKey from "../apiKey";
 
   export default {
     data() {
@@ -22,7 +26,7 @@
       }
     },
     methods: {
-      getDate: function(){
+      getDay: function(){
         const today = new Date()
         const year = today.getFullYear()
         const day = today.getDate()
@@ -31,10 +35,23 @@
         const month = months[today.getMonth()]
 
         return `${month} ${day}, ${year}`
-      }
+      },
+      getDate: function(){
+        const today = new Date()
+        const year = String(today.getFullYear())
+        let day = String(today.getDate())
+        let month = String(today.getMonth()+1)
+
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+
+        return `${year}-${month}-${day}`
+      },
     },
     // created() {
-    //   this.$http.get('http...url...api...date').then(function(data){
+    //   const date = this.getDate()
+    //   const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`
+    //   this.$http.get(url).then(function(data){
     //     this.pic = data
     //   })
     // }
@@ -42,6 +59,15 @@
 </script>
 
 <style>
+
+.dailypic {
+  margin: 0;
+  height: 100vh;
+  background-image: url("../assets/pluto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
 
 

@@ -18,14 +18,14 @@ export default new Router({
       name: "DailyPic",
 
       component: () =>
-        import("./views/dailyPic.vue")
+        import("./views/DailyPic.vue")
     },
     {
       path: "/MonthlyPics",
       name: "MonthlyPics",
 
       component: () =>
-        import("./views/monthlyPics.vue")
+        import("./views/MonthlyPics.vue")
     }
   ]
 });
