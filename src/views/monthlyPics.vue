@@ -22,14 +22,36 @@
 
     },
     methods: {
+      getDate: function(){
+        const today = new Date()
+        const year = String(today.getFullYear())
+        let day = String(today.getDate())
+        let month = String(today.getMonth()+1)
 
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+
+        return `${year}-${month}-${day}`
+      },
+      getFirstDay: function(){
+        const today = new Date()
+        const year = String(today.getFullYear())
+        let month = String(today.getMonth()+1)
+
+        if (month.length < 2) month = '0' + month;
+
+        return `${year}-${month}-01`
+      }
     },
-    // created() {
-    //   this.$http.get('url....where...we..get..pic').then(function(data) {
-    //     const dayPics = [...this.days, data]
-    //     this.days = dayPics
-    //   })
-    // }
+    created() {
+      const startDate = this.getFirstDay()
+      const endDate = this.getDate()
+      const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDate}&end_date=${endDate}`
+      this.$http.get('url....where...we..get..pic').then(function(data) {
+        const dayPics = [...this.days, data]
+        this.days = dayPics
+      })
+    }
   }
 
 </script>
@@ -37,3 +59,7 @@
 <style>
 
 </style>
+
+// https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2017-07-08&end_date=2017-07-10
+
+// https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2017-07-08
