@@ -50,7 +50,7 @@ Run ```npm run serve``` and visit localhost:8080 in your browser
 
 Daily Astronomer uses Jest for frontend testing.
 
-Run with ```npm run test``` from the root directory
+Run with ```npm run test:unit``` from the root directory
 
 ### Original Assignment
 
