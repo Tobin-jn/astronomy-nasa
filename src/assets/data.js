@@ -79,7 +79,6 @@ const nasaData = [
         service_version: "v1",
         title: "Space Beauty and Wonder",
         url: "https://apod.nasa.gov/apod/image/1812/CarinaNebulaGerminiani.jpg"
-
     },
     {
         copyright: "NASA",
