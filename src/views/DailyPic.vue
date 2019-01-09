@@ -60,36 +60,37 @@
 </script>
 
 <style>
-  .dailypic {
-    margin: 0;
-    background-image: url("../assets/pluto.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.dailypic {
+  margin: 0;
+  background-image: url("../assets/pluto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .pic-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.pic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .date {
-    color: #fff;
-    padding: 30px 0 15px 0;
-  }
+.date {
+  color: #fff;
+  padding: 30px 0 15px 0;
+}
 
-  .image {
-    width: 80%;
-    box-shadow: 0 0 6px 0 #fff;
-    border: 3px solid #fff;
+.image {
+  width: 80%;
+  box-shadow: 0 0 6px 0 #fff;
+  border: 3px solid #fff;
 
-  }
+}
 
-  .explanation {
-    color: #fff;
-    padding: 20px 70px 20px 70px;
-    text-align: center;
-  }
+.explanation {
+  color: #fff;
+  padding: 20px 70px 20px 70px;
+  text-align: center;
+}
+
 </style>

@@ -70,62 +70,63 @@
 </script>
 
 <style>
-  .card-container {
-    margin: 60px 40px 40px 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
+.card-container {
+  margin: 60px 40px 40px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
 
-  .day-card {
-    box-shadow: 0 0 6px 0 #FFFFFF;
-  }
+.day-card {
+  box-shadow: 0 0 6px 0 #FFFFFF;
+}
 
-  h1 { 
-    text-align: center;
-    color: #FFF;
-    margin: 0;
-    padding-top: 20px;
-  }
+h1 { 
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+  padding-top: 20px;
+}
 
-  h4 {
-    text-align: center;
-    color: #FFF;
-  }
+h4 {
+  text-align: center;
+  color: #FFF;
+}
 
-  .home-btn {
-    width: 70px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
+.home-btn {
+  width: 70px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 
-  .monthlyPics {
-    margin: 0;
-    background-image: url("../assets/pluto.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.monthlyPics {
+  margin: 0;
+  background-image: url("../assets/pluto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .monthly-pic-btn,
-  .daily-pic-btn {
-    background-color: #4a6298;
-    font-size: 22px;
-    box-shadow: 0 0 6px 0 #4a6298;
-    border: 3px solid #4a6298;
-    color: #93a5cb;
-    text-shadow: 0 0 2px #4a6298;
-  }
+.monthly-pic-btn,
+.daily-pic-btn {
+  background-color: #4a6298;
+  font-size: 22px;
+  box-shadow: 0 0 6px 0 #4a6298;
+  border: 3px solid #4a6298;
+  color: #93a5cb;
+  text-shadow: 0 0 2px #4a6298;
+}
 
-  .monthly-pic-btn:hover,
-  .daily-pic-btn:hover {
-    background-color: #93a5cb;
-    text-shadow: 0 0 2px #93a5cb;
-    box-shadow: 0 0 6px 0 #FFF;
-    border: 3px solid #93a5cb;
-    color: #4a6298;
-  }
+.monthly-pic-btn:hover,
+.daily-pic-btn:hover {
+  background-color: #93a5cb;
+  text-shadow: 0 0 2px #93a5cb;
+  box-shadow: 0 0 6px 0 #FFF;
+  border: 3px solid #93a5cb;
+  color: #4a6298;
+}
+
 </style>

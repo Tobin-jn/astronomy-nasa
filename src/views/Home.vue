@@ -78,4 +78,5 @@ export default {
     text-decoration: none;
     padding: 20px;
   }
+  
 </style>
