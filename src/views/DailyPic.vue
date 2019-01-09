@@ -15,10 +15,10 @@
   </div>
 </template>
 
-// width="800"
+// import apiKey from "../apiKey";
+
 <script>
 import nasaData from "../assets/data";
-import apiKey from "../apiKey";
 
 export default {
   data() {
@@ -64,8 +64,13 @@ export default {
   // created() {
   //   const date = this.getDate()
   //   const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`
-  //   this.$http.get(url).then(function(data){
+  //   this.$http.get(url).then((data) => {
   //     this.pic = data
+  //   }, (error) => {
+  //     console.log("Error", error)
+  //   })
+  //   .catch((error) => {
+  //     console.log("Caught Error", error)
   //   })
   // }
 };
