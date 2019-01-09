@@ -2,8 +2,6 @@
 
 View the NASA Astronomy Picture of the Day. Users can also view the entire month of images.
 
-### Background/About
-
 ### See it Live
 
 [Daily Astronomer](https://nasa-vue-ec464.firebaseapp.com/) on Firebase
@@ -58,7 +56,7 @@ Run with ```npm run test:unit``` from the root directory
 
 ### Contributors
 
-* Tobin Nelson: [Github Profile](https://github.com/Tobin-jn)
+* [Tobin Nelson](https://github.com/Tobin-jn)
 
 
 
