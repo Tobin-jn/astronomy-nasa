@@ -98,6 +98,7 @@ export default {
 
 .day-card {
   box-shadow: 0 0 6px 0 #ffffff;
+  margin: 10px;
 }
 
 h1 {
