@@ -72,8 +72,12 @@
 </script>
 
 <style>
+body {
+  margin: 0;
+}
+
 .card-container {
-  margin: 50px 40px 40px 40px;
+  margin: 60px 40px 40px 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -132,7 +136,7 @@ button {
 button:hover {
   background-color: #93a5cb;
   text-shadow: 0 0 2px #93a5cb;
-  box-shadow: 0 0 6px 0 #93a5cb;
+  box-shadow: 0 0 6px 0 #FFF;
   border: 3px solid #93a5cb;
   color: #4a6298;
 }
