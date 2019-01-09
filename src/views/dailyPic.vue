@@ -1,14 +1,17 @@
 <template>
   <div class="dailypic">
     <h1>Astronomy Picture of the Day</h1>
-    <router-link to="/">Home</router-link>
-    <router-link to="/MonthlyPics">Pictures of the Month</router-link>
-
+    <router-link to="/"><img class="home-btn" src="../assets/home-icon.png" alt="Home Icon" /></router-link>
     <div class="pic-container">
       <h3 class="date">{{ getDay() }}</h3>
       <img class="image" v-bind:src="pic.url" alt="Daily Astronomy Picture"/>
       <p class="explanation">{{ pic.explanation }}</p>
     </div>
+    
+    <button>
+      <router-link to="/MonthlyPics">Pictures of the Month</router-link>
+    </button>
+
   </div>
 </template>
 
@@ -56,6 +59,15 @@
 </script>
 
 <style>
+
+.dailypic {
+  margin: 0;
+  height: 100vh;
+  background-image: url("../assets/pluto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
 
 
