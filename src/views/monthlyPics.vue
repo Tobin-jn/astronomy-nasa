@@ -13,6 +13,7 @@
 
 <script>
   import nasaData from '../assets/data'
+  import apiKey from "../apiKey";
 
   export default {
     data() {
@@ -43,14 +44,14 @@
         return `${year}-${month}-01`
       }
     },
-    created() {
-      const startDate = this.getFirstDay()
-      const endDate = this.getDate()
-      const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDate}&end_date=${endDate}`
-      this.$http.get('url....where...we..get..pic').then(function(data) {
-        this.days = data
-      })
-    }
+    // created() {
+    //   const startDate = this.getFirstDay()
+    //   const endDate = this.getDate()
+    //   const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDate}&end_date=${endDate}`
+    //   this.$http.get(url).then(function(data) {
+    //     this.days = data
+    //   })
+    // }
   }
 
 </script>
