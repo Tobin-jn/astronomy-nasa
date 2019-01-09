@@ -16,20 +16,16 @@ export default new Router({
     {
       path: "/DailyPic",
       name: "DailyPic",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
+
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/dailyPic.vue")
+        import("./views/dailyPic.vue")
     },
     {
       path: "/MonthlyPics",
       name: "MonthlyPics",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
+
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/monthlyPics.vue")
+        import("./views/monthlyPics.vue")
     }
   ]
 });
