@@ -9,6 +9,7 @@ Daily Astronomer is a Single Page Application build with Vue.js. Users can view 
 ### Tech Stack
 
 * Vue.js
+* Vue Router
 * Jest 
 
 ### API's Used
