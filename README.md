@@ -11,7 +11,7 @@ Daily Astronomer is a Single Page Application build with Vue.js. Users can view 
 * Vue.js
 * Jest 
 
-### API's used
+### API's Used
 
 * NASA APOD
 
