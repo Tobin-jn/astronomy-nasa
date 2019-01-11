@@ -1,5 +1,6 @@
 # Daily Astronomer
 
+### About
 Daily Astronomer is a Single Page Application build with Vue.js. Users can view the NASA Astronomy Picture of the Day. Users can also view the entire month of images.
 
 ### See it Live
